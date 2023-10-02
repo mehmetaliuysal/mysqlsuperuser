@@ -1,4 +1,10 @@
-# Database User Creation Script
+# Database Super User Creation Script
+
+This repository offers scripts designed to streamline the process of creating super users for MariaDB or MySQL databases. With just a few prompts, these scripts handle user creation and assign all necessary privileges, enabling the new super user to access the database from a specified IP address. Scripts are available in PHP, Bash, and Python, catering to diverse operational environments. 
+
+Utilizing these scripts not only simplifies database user management but also minimizes the risk of manual errors. They're especially handy for developers and database administrators who frequently work with MariaDB and MySQL databases.
+
+Simply choose your preferred scripting language, follow the guidelines provided, and have your super user set up in no time!
 
 This repository contains scripts for creating a super user in MariaDB/MySQL databases. Scripts are provided in 3 languages: Bash, Python and PHP.
 
