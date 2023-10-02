@@ -15,17 +15,11 @@ This repository contains scripts for creating a super user in MariaDB/MySQL data
 ## Requirements
 
 1. **MariaDB/MySQL**: Ensure you have MariaDB or MySQL installed and accessible from the command line.
-2. **PHP**: For the PHP script, you need to have PHP CLI installed.
-3. **Bash**: For the Bash script, you should be on a UNIX-like system or have Bash installed on Windows (e.g., through WSL).
-4. **Python**: For the Python script, ensure you have Python 3 installed.
+2. **Bash**: For the Bash script, you should be on a UNIX-like system or have Bash installed on Windows (e.g., through WSL).
+3. **Python**: For the Python script, ensure you have Python 3 installed.
+4. **PHP**: For the PHP script, you need to have PHP CLI installed.
 
 ## Usage
-
-### PHP
-
-1. Save the PHP script as `create_db_user.php`.
-2. Run the script: `php create_db_user.php`
-
 
 ### Bash
 
@@ -39,6 +33,10 @@ This repository contains scripts for creating a super user in MariaDB/MySQL data
 1. Save the Python script as `create_db_user.py`.
 2. Run the script: `python3 create_db_user.py`
 
+### PHP
+
+1. Save the PHP script as `create_db_user.php`.
+2. Run the script: `php create_db_user.php`
 
 ## Python Script Usage Example
 
