@@ -40,6 +40,64 @@ This repository contains scripts for creating a super user in MariaDB/MySQL data
 2. Run the script: `python3 create_db_user.py`
 
 
+## Python Script Usage Example
+
+1. **Script Execution**:
+   Start by running the `create_db_user.py` script.
+
+   ```bash
+   $ python3 create_db_user.py
+   ```
+
+   Output:
+   ```bash
+   Which database are you using (mariadb/mysql)? 
+   ```
+
+2. **Database Choice**:
+   Here, provide your choice of database (mariadb or mysql).
+   ```bash
+   mariadb
+   ```
+
+   Output:
+   ```bash
+   Username: 
+   ```
+
+
+3. **Entering Username**:
+   Input the username you wish to create.
+   ```bash
+    mysuperuser
+    ```
+    Output:
+    ```bash
+    Password:
+    ```
+
+4. **Entering Password**:
+   Provide the desired password.
+   ```bash
+    supersecretpassword
+    ```
+    Output:
+    ```bash
+    IP Address:
+    ```
+
+5. **IP Address Input**:
+   Specify the IP address from which the user can connect.
+   ```bash
+    192.168.1.100
+    ```
+    Output:
+    ```bash
+    Operation completed.
+    ```    
+
+
+
 ## Support
 
 For support, issues, or feedback, please open an issue on this repository.
