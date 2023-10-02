@@ -1,5 +1,14 @@
 <?php
 
+// Prompt user for DB choice
+echo "Which database are you using (mariadb/mysql)? ";
+$db_choice = trim(fgets(STDIN));
+
+if ($db_choice !== "mariadb" && $db_choice !== "mysql") {
+    echo "Invalid choice. Please choose either 'mariadb' or 'mysql'.";
+    exit;
+}
+
 // Prompt user for input
 echo "Username: ";
 $username = trim(fgets(STDIN));
@@ -10,10 +19,10 @@ $password = trim(fgets(STDIN));
 echo "IP Address: ";
 $ip = trim(fgets(STDIN));
 
-// Connect to MariaDB using shell commands via `mariadb -e`
-$createUserCmd = "mariadb -e \"CREATE USER '$username'@'$ip' IDENTIFIED BY '$password';\"";
-$grantPrivilegesCmd = "mariadb -e \"GRANT ALL PRIVILEGES ON *.* TO '$username'@'$ip' WITH GRANT OPTION;\"";
-$flushCmd = "mariadb -e \"FLUSH PRIVILEGES;\"";
+// Connect to the selected DB using shell commands via `-e`
+$createUserCmd = "$db_choice -e \"CREATE USER '$username'@'$ip' IDENTIFIED BY '$password';\"";
+$grantPrivilegesCmd = "$db_choice -e \"GRANT ALL PRIVILEGES ON *.* TO '$username'@'$ip' WITH GRANT OPTION;\"";
+$flushCmd = "$db_choice -e \"FLUSH PRIVILEGES;\"";
 
 // Execute the commands in sequence
 $createOutput = shell_exec($createUserCmd);
